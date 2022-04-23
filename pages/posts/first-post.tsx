@@ -2,10 +2,11 @@ import React from 'react';
 import Link from "next/link";
 import Head from 'next/head';
 import Script from 'next/script';
+import Layout from '../../src/components/Layout';
 
 export default function Page() {
   return (
-    <>
+    <Layout>
       <Head>
         <title>First Post</title>
       </Head>
@@ -22,6 +23,6 @@ export default function Page() {
           <a>Back to home</a>
         </Link>
       </h2>
-    </>
+    </Layout>
   )
 }
